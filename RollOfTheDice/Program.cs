@@ -44,7 +44,7 @@ namespace RollOfTheDice
 
         static void Display(int[] results)
         {
-            Console.WriteLine("Roll Of the Dice".PadLeft(35));
+            Console.WriteLine("Roll Of The Dice".PadLeft(35));
             Console.WriteLine(new string('-', 55));
             string currentLocation = "X";
 
