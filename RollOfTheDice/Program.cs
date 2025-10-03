@@ -1,4 +1,10 @@
-﻿namespace RollOfTheDice
+﻿//Kyson Hensley
+//RCET2265
+//Fall 2025
+//RollOfTheDice Program
+//https://github.com/kysonhensley/RollOfTheDice.git
+
+namespace RollOfTheDice
 {
     internal class Program
     {
@@ -38,12 +44,15 @@
 
         static void Display(int[] results)
         {
+            Console.WriteLine("Roll Of the Dice".PadLeft(35));
+            Console.WriteLine(new string('-', 55));
             string currentLocation = "X";
-            string[] header = { "Roll Of The Dice" };
-            string[] possibleOutcomes = { " 2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "10 ", "11 ", "12" };
+
+            string[] possibleOutcomes = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" };
+
             foreach (string letter in possibleOutcomes)
             {
-                Console.Write(letter + " | ");
+                Console.Write(letter.PadLeft(4) + "|");
             }
             Console.WriteLine();
             //add 50 "-" to console
@@ -54,7 +63,7 @@
 
             for (int i = 0; i < 11; i++)
             {
-                Console.Write(results[i].ToString().PadLeft(3) + " | ");
+                Console.Write(results[i].ToString().PadLeft(4) + "|");
             }
             Console.WriteLine();
 
